@@ -124,7 +124,7 @@ figure.presentacion-img {
 
 figure.presentacion-img img { /*para redondear la foto de presentación*/
   border-radius: 50%;
-  width: 400px;
+  max-width: 500px;
   }
 
 article.presentacion {
