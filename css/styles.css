@@ -101,16 +101,24 @@ section {
   min-height: 100vh;
   padding-top: 120px;
 }
-/*tablet*/
-@media(min-widt: 768px){
-  p {
-  font-size: 18px;
+
+/*mobile*/
+section {
+  display: flex;
+  flex-direction: column;
 }
+h1{
+  font-size: 36px;
 }
+
 /*desktop*/
 @media(min-width:1024px){
   section{
     flex-direction: row;
+  }
+
+h1 {
+  font-size: 42px;
   }
 }
 
