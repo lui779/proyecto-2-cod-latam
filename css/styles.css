@@ -23,12 +23,6 @@ body {
   
 }
 
-#logohtml {
-  max-width: 40px;
-  width: 100%;
-}
-
-
 h1 {
   font-size: 36px;
   text-align: center;
@@ -80,6 +74,24 @@ header {
   left: 0%;
   box-shadow: 0 3px 10px -5px #5f5f5f;
   color: #fbfbfb;
+}
+
+ul#logos {
+  display: flex;
+
+}
+
+#logohtml {
+  max-width: 40px;
+  width: 100%;
+}
+#logocss{
+  max-width: 40px;
+  width: 100%;
+}
+#logojs{
+  max-width: 40px;
+  width: 100%;
 }
 
 ul#menu {
@@ -193,12 +205,6 @@ footer{
   background: #af599e;
   color: #fbfbfb;  
 }
-
-#logocss{
-  max-width: 40px;
-  width: 100%;
-}
-
 
 /*desktop*/
 @media(min-width:1024px){
