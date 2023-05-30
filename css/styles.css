@@ -43,7 +43,7 @@ p {
   margin: 16px 0;
 }
 
-/* Para quitar los puntos a los items de listas */
+/* Para quitar los puntos a los items <li> de la lista ul */
 ul {
   list-style: none;
 }
@@ -88,8 +88,13 @@ ul#menu {
   padding: 20px;
 }
 
-li.menu_head {
+
+li.menu_head a.active,
+a.btn:hover {
+background: #af599e;
+transition: background-color 0.3s;
   padding: 16px;
+
 }
 
 section {
@@ -111,16 +116,6 @@ h1{
   font-size: 36px;
 }
 
-/*desktop*/
-@media(min-width:1024px){
-  section{
-    flex-direction: row;
-  }
-
-h1 {
-  font-size: 42px;
-  }
-}
 
 section#inicio {
   justify-content: space-around;
@@ -133,7 +128,8 @@ figure.presentacion-img {
 figure.presentacion-img img { /*para redondear la foto de presentación*/
   border-radius: 50%;
   max-width: 500px;
-  }
+
+}
 
 article.presentacion {
   width: 100%;
@@ -201,4 +197,19 @@ footer{
 #logocss{
   max-width: 40px;
   width: 100%;
+}
+
+
+/*desktop*/
+@media(min-width:1024px){
+  section{
+    flex-direction: row;
+  }
+
+h1 {
+  font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+  }
 }
