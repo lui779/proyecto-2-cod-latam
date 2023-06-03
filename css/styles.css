@@ -48,6 +48,11 @@ a {
   color: inherit;
 }
 
+.button:hover {
+  background-color: #0f0f0f;
+  
+}
+
 img {
   max-width: 100%;
 }
@@ -100,14 +105,6 @@ ul#menu {
   padding: 20px;
 }
 
-
-li.menu_head a.active,
-a.btn:hover {
-background: #af599e;
-transition: background-color 0.3s;
-  padding: 16px;
-
-}
 
 section {
   display: flex;
