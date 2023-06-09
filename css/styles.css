@@ -224,11 +224,16 @@ footer{
   ul#contact-links li {
     margin: 32px;  
   }
-
 }
 
+
+
+
 li.menu-item:hover,
+li.menu-item a.active
 a.btn:hover {
   background-color: red;
   transition: backgroynd-color 0.3s;
 }
+
+
