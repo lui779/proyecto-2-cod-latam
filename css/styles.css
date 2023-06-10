@@ -1,17 +1,17 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@400;700&display=swap');
 </style>
-/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
-*  cuyos valores asigna por defecto el navegador.
-*/
+
+
 
 /* Reset */
 * {  
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* Para que el scrolleo en la one page sea suave */
+  /* Para que el scrolleo en la página sea suave */
   scroll-behavior:smooth;
+  
 }
 
 body {
@@ -19,8 +19,8 @@ body {
   font-size: 18px;
   line-height: 1.2;
   background-color: #fbfbfb;
-  color: #0f0f0f; 
-  
+  color: #0f0f0f;
+    
 }
 
 h1 {
@@ -40,6 +40,7 @@ p {
 /* Para quitar los puntos a los items <li> de la lista ul */
 ul {
   list-style: none;
+  
 }
 
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
@@ -99,7 +100,7 @@ ul#menu {
   display: flex;
   font-size: 20px;
   padding: 20px;
-  margin: 10px;
+  margin: 15px;
 }
 
 
@@ -117,6 +118,7 @@ section {
 section {
   display: flex;
   flex-direction: column;
+  min-width: 768px;
 }
 h1{
   font-size: 36px;
@@ -199,6 +201,7 @@ footer{
   justify-content:space-around;
   align-items:center;
   width: 100%;
+  min-width: 768px;
   height: 90px;  
   background: #af599e;
   color: #fbfbfb;  
@@ -228,6 +231,7 @@ footer{
   ul#contact-links li {
     margin: 32px;  
   }
+
 }
 
 
