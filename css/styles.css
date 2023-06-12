@@ -63,20 +63,44 @@ main {
 }
 
 
-header {
-  display: flex;
-  justify-content: space-between ;
-  align-items: center;
-  padding: 16px;
+.header {
+  background-color: coral;
   height: 90px;
-  width: 100%;
-  background-color: hsl(241, 92%, 24%);
-  position:fixed;
-  top: 0%;
-  left: 0%;
-  box-shadow: 0 3px 10px -5px #5f5f5f;
-  color: #fbfbfb;
+  position: fixed; /*permite que el header se quede fijo arriba y no se pierda al hacerle scroll a la página*/
+  width: 100%; /*Para que la barra ocupe el 100% del ancho de la página*/
+  top: 0;
+  left: 0;
 }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  display: flex;
+
+}
+
+.logo {
+  font-size: 30px;
+  padding: 0 40px;
+  line-height: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 ul#logos {
   display: flex;

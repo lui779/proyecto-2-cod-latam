@@ -10,34 +10,43 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="shortcut icon" href="img\solarpanel.png" /> <!--Icono de pestaña panel solar-->
+  <script src="https://kit.fontawesome.com/9ddac75438.js" crossorigin="anonymous"></script> <!--sript para
+  el menu hamburguesa-->
     
 </head>
 
 <body>
   
-  <header>
+  <header class="header">
+  <nav class="nav">
+   <ul class="nav-logo">
+    <li class="nav-logo-item">           
+  <a href="https://www.w3schools.com/html/default.asp" class="logo nav-link" target="_blank"> <!--Enlace a tutorial html, nva. Pestaña-->
+    <img id="logohtml" src="img\html.png" alt="Tutorial html" >
+  </a>
+    </li>
+    <li class="nav-logoitem">
+  <a href="https://www.w3schools.com/css/default.asp" class="logo nav-link" target="_blank">  <!--Enlace a tutorial css, nva. Pestaña-->
+    <img id="logocss" src="img\css.png" alt="Tutorial css" >  <!--Logo css-->
+  </a>
+    </li>
+    <li class="nav-logo-item">
+  <a href="https://www.w3schools.com/js/default.asp" class="logo nav-link" target="_blank">  <!--Enlace a tutorial js, nva. Pestaña-->
+    <img id="logojs" src="img\js.png" alt="Tutorial js" >  <!--Logo js-->
+  </a>
+    </li>
+    <button class="nav-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+      
+
     
-    <ul id="logos"> <!--Unordered list-->
-      <li>
-        <a href="https://www.w3schools.com/html/default.asp" target="_blank"> <!--Enlace a tutorial html, nva. Pestaña-->
-          <img id="logohtml" src="img\html.png" alt="Tutorial html" >  <!--Logo html-->
-      </li>
-      <li>
-        <a href="https://www.w3schools.com/css/default.asp" target="_blank">  <!--Enlace a tutorial css, nva. Pestaña-->
-          <img id="logocss" src="img\css.png" alt="Tutorial css" />  <!--Logo css-->
-      </li>
-      <li>
-        <a href="https://www.w3schools.com/js/default.asp" target="_blank">  <!--Enlace a tutorial js, nva. Pestaña-->
-          <img id="logojs" src="img\js.png" alt="Tutorial js" />  <!--Logo js-->
-        </a>
-      </li>
-    </ul>
-    <nav>
-      <ul id="menu"> <!--Elementos del menú de navegación entre las secciones de la página-->
-        <li class="menu-item">
+      <ul class="nav-menu"> <!--Elementos del menú de navegación entre las secciones de la página-->
+        <li class="nav-menu-item">
           <a href="#inicio" class="active"> Inicio</a>
         </li>
-        <li class="menu-item">
+        <li class="nav-menu-item">
           <a href="#contacto"> Contacto</a>
         </li>
       </ul>
