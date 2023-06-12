@@ -37,18 +37,13 @@ p {
   margin: 16px 0;
 }
 
-/* Para quitar los puntos a los items <li> de la lista ul */
-ul {
-  list-style: none;
-  
-}
 
-/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+/* Para que los enlaces hereden el color de texto y no tengan subrayado
 a {
   text-decoration: none;
   color: inherit;
 }
-
+*/
 
 img {
   max-width: 100%;
@@ -63,8 +58,8 @@ main {
 }
 
 
-.header {
-  background-color: coral;
+.header { 
+  background-color: blue;
   height: 90px;
   position: fixed; /*permite que el header se quede fijo arriba y no se pierda al hacerle scroll a la página*/
   width: 100%; /*Para que la barra ocupe el 100% del ancho de la página*/
@@ -75,19 +70,25 @@ main {
 .nav {
   display: flex;
   justify-content: space-between;
-  max-width: 992px;
-  margin: 0 auto;
+  max-width: 1024px;
+  margin: 10 50px;
+  align-items: center;
+  }
+
+  /* Para quitar los puntos a los items <li> de la lista ul*/
+ul.nav-logo {
+  list-style: none;
+  display: flex;
+     
 }
 
 .nav-link {
-  display: flex;
-
+  text-decoration: none;  
 }
 
-.logo {
-  font-size: 30px;
-  padding: 0 40px;
-  line-height: 90px;
+.nav-logo-item {
+  max-width: 40px;
+  width: 100%;  
 }
 
 
@@ -101,7 +102,7 @@ main {
 
 
 
-
+/*
 ul#logos {
   display: flex;
 
@@ -125,7 +126,7 @@ ul#menu {
   font-size: 20px;
   padding: 20px;
   margin: 15px;
-}
+}   */
 
 
 section {
@@ -138,7 +139,7 @@ section {
   padding-top: 120px;
 }
 
-/*mobile*/
+/*mobile
 section {
   display: flex;
   flex-direction: column;
@@ -147,7 +148,7 @@ section {
 h1{
   font-size: 36px;
 }
-
+*/
 
 section#inicio {
   justify-content: space-around;
@@ -168,18 +169,22 @@ article.presentacion {
   text-align: center;
 }
 
-a.button {
+
+a.button {    /* OK boton descarga mi cv*/
   background-color: #af599e;
   color: #fbfbfb;
   padding: 12px 20px;
   border-radius: 50px;
   font-size: 20px;
-  display: inline-block;  
+  display: inline-block; 
+  text-decoration: none; 
 }
+
+/*
 a.button:hover {
   background-color: aqua;
   transition: background-color o.3s;
-}
+} */ 
 
 section#contacto{
   flex-direction: column;
@@ -261,11 +266,11 @@ footer{
 
 
 
-li.menu-item:hover,
+/*li.menu-item:hover,
 li.menu-item a.active
 a.btn:hover {
   background-color: red;
   transition: backgroynd-color 0.3s;
-}
+}*/
 
 
