@@ -20,16 +20,18 @@ body {
   line-height: 1.2;
   background-color: #fbfbfb;
   color: #0f0f0f;
+  padding-bottom: 0;
+  margin: 0;
     
 }
 
 h1 {
-  font-size: 36px;
-  text-align: center;
+  font-size: 48px;
+    text-align: left;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 32px;
   text-align: center;
 }
 
@@ -61,29 +63,38 @@ main {
 .header { 
   background-color: blue;
   height: 90px;
-  position: fixed; /*permite que el header se quede fijo arriba y no se pierda al hacerle scroll a la página*/
-  width: 100%; /*Para que la barra ocupe el 100% del ancho de la página*/
+  width: 100%;
+  position: fixed;
   top: 0;
   left: 0;
 }
 
 .nav {
-  display: flex;
+  display: flex;  
   justify-content: space-between;
-  max-width: 1024px;
-  margin: 10 50px;
   align-items: center;
-  }
+  width: 100%; 
+  
+}
 
-  /* Para quitar los puntos a los items <li> de la lista ul*/
-ul.nav-logo {
-  list-style: none;
+nav.nav {
   display: flex;
-     
+  width: 100%;
+  height: 90px;
+  align-items: center;
 }
 
 .nav-link {
-  text-decoration: none;  
+  color: white;
+  text-decoration: none;
+}
+
+  /* Para quitar los puntos a los items <li> de la lista ul*/
+ul.nav-logo {
+  display: flex;
+  align-items: center;
+  list-style: none;
+   
 }
 
 .nav-logo-item {
@@ -91,43 +102,43 @@ ul.nav-logo {
   width: 100%;  
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/*
-ul#logos {
+.nav-menu {
   display: flex;
-
+  justify-content: center;
+  margin-right: 40px;
+  list-style: none;
 }
 
-#logohtml {
-  max-width: 40px;
-  width: 100%;
-}
-#logocss{
-  max-width: 40px;
-  width: 100%;
-}
-#logojs{
-  max-width: 40px;
-  width: 100%;
+.nav-menu-item {
+  font-size: 16px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
 }
 
-ul#menu {
-  display: flex;
-  font-size: 20px;
-  padding: 20px;
-  margin: 15px;
-}   */
+.nav-menu-link {
+  padding: 6px 10px;
+  border-radius: 3px;
+  color: white;
+}
 
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  background-color: grey;
+  transition: 0.3s;
+}
+
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 70px;
+  cursor: pointer;
+  display: none;
+}
 
 section {
   display: flex;
@@ -139,18 +150,8 @@ section {
   padding-top: 120px;
 }
 
-/*mobile
-section {
-  display: flex;
-  flex-direction: column;
-  min-width: 768px;
-}
-h1{
-  font-size: 36px;
-}
-*/
-
 section#inicio {
+  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -165,10 +166,9 @@ figure.presentacion-img img { /*para redondear la foto de presentación*/
 }
 
 article.presentacion {
-  width: 100%;
-  text-align: center;
+  width: 50%;
+  text-align: left;
 }
-
 
 a.button {    /* OK boton descarga mi cv*/
   background-color: #af599e;
@@ -180,11 +180,10 @@ a.button {    /* OK boton descarga mi cv*/
   text-decoration: none; 
 }
 
-/*
 a.button:hover {
   background-color: aqua;
   transition: background-color o.3s;
-} */ 
+} 
 
 section#contacto{
   flex-direction: column;
@@ -196,7 +195,7 @@ article.contacto{
   width: 100%;
   text-align: center;
   background: rgba(175, 89, 158, 0.3);
-  
+
 }
 
 #contactame{
@@ -204,7 +203,7 @@ article.contacto{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
+
 }
 
 figure.email{
@@ -230,23 +229,83 @@ footer{
   justify-content:space-around;
   align-items:center;
   width: 100%;
-  min-width: 768px;
+  /*min-width: 768px; cambiar este min para el query mobile*/
   height: 90px;  
   background: #af599e;
-  color: #fbfbfb;  
+  color: #fbfbfb;
+
 }
 
-/* MediaQuery para desktop*/
+@media (max-width:768px) {
+  
+
+  .header { 
+    background-color: blue;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  nav.nav {
+    align-items: center;
+  }
+
+  .nav-logo-item {
+    max-width: 30px;
+    width: 100%;  
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: ;
+    background-color: #0f0f0f;    
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+
+    height: calc(100% - 80px); /*Barra de scroll del menú*/
+    overflow-y: auto;
+  }  
+
+  .nav-menu-item {
+    line-height: 70px;   
+  
+  }  /*Llegué hasta aquí* minuto 27:26  guía Yoelvis Mulen*/
+
+  section#inicio {
+    flex-direction: column;
+  }
+
+  article.presentacion {
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 36px;
+      text-align: center;
+  }
+  
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+    
+
+}
+
+
+/* MediaQuery para desktop
 @media(min-width:1024px){
 
-  h1{
-    font-size: 48px;
-    text-align: left;
-  }
+  
 
-  h2{
-    font-size: 32px;
-  }
+  
 
   section#inicio{
     flex-direction: row;
@@ -261,7 +320,7 @@ footer{
     margin: 32px;  
   }
 
-}
+}*/
 
 
 
@@ -273,4 +332,14 @@ a.btn:hover {
   transition: backgroynd-color 0.3s;
 }*/
 
+/*mobile
+section {
+  display: flex;
+  flex-direction: column;
+  min-width: 768px;
+}
+h1{
+  font-size: 36px;
+}
+*/
 
