@@ -28,8 +28,7 @@
               class="logo"
               target="_blank"
             >
-              <!--Enlace a tutorial html, nva. Pestaña-->
-              <img id="logohtml" src="img\html.png" alt="Tutorial html" />
+              <img src="img\html.png" alt="Tutorial html" />
             </a>
           </li>
           <li class="nav-logo-item">
@@ -38,9 +37,7 @@
               class="logo"
               target="_blank"
             >
-              <!--Enlace a tutorial css, nva. Pestaña-->
-              <img id="logocss" src="img\css.png" alt="Tutorial css" />
-              <!--Logo css-->
+              <img src="img\css.png" alt="Tutorial css" />
             </a>
           </li>
           <li class="nav-logo-item">
@@ -49,28 +46,32 @@
               class="logo"
               target="_blank"
             >
-              <!--Enlace a tutorial js, nva. Pestaña-->
-              <img id="logojs" src="img\js.png" alt="Tutorial js" />
+              <img src="img\js.png" alt="Tutorial js" />
               <!--Logo js-->
             </a>
           </li>
         </ul>
-        <button class="nav-toggle">
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <!--Por defecto el boto va a estar cerrado-->
           <i class="fa-solid fa-bars"></i>
         </button>
 
-        <ul class="nav-menu">
+        <ul class="nav-menu nav-menu_visible">
           <!--Elementos del menú de navegación entre las secciones de la página-->
           <li class="nav-menu-item">
-            <a
-              href="#inicio"
-              class="nav-menu-link nav-link nav-menu-link_active"
-            >
-              Inicio</a
-            >
+            <a href="#inicio" class="nav-menu-link nav-link"> Inicio</a>
           </li>
           <li class="nav-menu-item">
             <a href="#contacto" class="nav-menu-link nav-link"> Contacto</a>
+          </li>
+          <li class="nav-menu-item">
+            <a
+              href="documents\resumen_curricular_Luis_ Garces.pdf"
+              class="nav-menu-link nav-link"
+              target="_blank"
+            >
+              Descargar CV</a
+            >
           </li>
         </ul>
       </nav>
