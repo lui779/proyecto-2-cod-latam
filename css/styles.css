@@ -74,8 +74,6 @@ nav.nav {
   height: 90px;
 }
 
-
-
 .nav-link {
   text-decoration: none;
 }
@@ -249,7 +247,7 @@ footer{
   }
 
   nav.nav {
-    align-items: center;
+    align-items: center;        
   }
 
   .nav-logo-item {
@@ -269,10 +267,10 @@ footer{
     padding: 20px 0;
 
     height: calc(100% - 80px); /*Barra de scroll del menú, el 100% para que ocupe toda la pantalla - 80 px, la altura del header*/
-    overflow-y: auto;
+    overflow-y:auto;
 
     left: 100%;
-    transition:left 0.3s ;
+    transition:left 0.5s ;
      /*Como el menú de navegación es un dispplay float con el left 100% hacemos 
     que se desplace u oculte hacia la derecha al pulsar el bars*/ 
   }  
