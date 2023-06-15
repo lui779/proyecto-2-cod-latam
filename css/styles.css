@@ -283,7 +283,6 @@ footer{
   .nav-menu-link {
     padding: 6px 10px;
     color: black;
-    font: bold;
   }
 
   .nav-menu-link:hover,   /*Aquí le quitamos el sombreado y activamos solo cambio de color de letra*/

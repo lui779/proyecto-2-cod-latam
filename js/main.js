@@ -3,15 +3,16 @@
 //  - Selecciona al elemento que ya tiene la clase active (por defecto, primero la tendrá Inicio)
 //  - Le quita a ese elmento la clase
 //  - Se la agrega al elemento que fue clickeado
-
-/*const menuItems = document.querySelectorAll('menu-item');  // 1 - Seleccionar todos los items del menu
+/*
+const menuItems = document.querySelectorAll('.nav-toggle');  // 1 - Seleccionar todos los items del menu
 menuItems.forEach(function(item) {
     item.addEventListener('click', function(e) {
         const currentItem = document.querySelector('.active');
         currentItem.classList.remove('active');
         e.target.classList.add('active');
     });    
-});*/
+});
+*/
 
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
