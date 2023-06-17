@@ -53,7 +53,7 @@ main {
 
 
 .header { 
-  background-color: blue;
+  background-color: #900C3F;
   height: 90px;
   width: 100%;
   position: fixed;
@@ -161,7 +161,7 @@ article.presentacion {
 }
 
 a.button {    /* OK boton descarga mi cv*/
-  background-color: #af599e;
+  background-color: #C70039;
   color: #fbfbfb;
   padding: 12px 20px;
   border-radius: 50px;
@@ -171,7 +171,7 @@ a.button {    /* OK boton descarga mi cv*/
 }
 
 a.button:hover {
-  background-color: aqua;
+  background-color: #581845;
   transition: background-color o.3s;
 } 
 
@@ -184,7 +184,8 @@ section#contacto{
 article.contacto{
   width: 100%;
   text-align: center;
-  background: rgba(175, 89, 158, 0.3);
+  background: #662635;
+  color: #fbfbfb;
 
 }
 
@@ -221,7 +222,7 @@ footer{
   width: 100%;
   /*min-width: 768px; cambiar este min para el query mobile*/
   height: 90px;  
-  background: #af599e;
+  background: #900C3F;
   color: #fbfbfb;
 
 }
@@ -229,7 +230,7 @@ footer{
 @media (max-width:768px) {
 
   .header { 
-    background-color: blue;
+    background-color: #030837;
     height: 80px;
     width: 100%;
     position: fixed;
@@ -321,6 +322,24 @@ footer{
     text-align: center;
   }
 
+  article.contacto{
+    width: 100%;
+    text-align: center;
+    background: #17202A;
+    color: #fbfbfb;
+  
+  }
+
+  a.button {    /* boton descarga mi cv*/
+    background-color: #232F9A;
+    color: #fbfbfb;
+  }
+
+  a.button:hover {
+    background-color: #030837;
+    transition: background-color o.3s;
+  }
+
   h1 {
     font-size: 36px;
       text-align: center;
@@ -338,7 +357,7 @@ footer{
     align-items:center;
     width: 100%;
     height: 80px;  
-    background: blue;
+    background: #030837;
     font-size: 16px;
     color: #fbfbfb;
   
